@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Reddit Karma Blocker",
+    "author": "Erlend Eelmets",
+    "version": "0.1",
+    "description": "Blocks Karma numbers in reddit. ",
+    "icons": {
+      "144": "icons/karma.png"
+    },
+    "browser_action": {
+      "default_icon": {
+        "144": "icons/karma.png"
+      },
+      "default_title": "Reddit Karma Blocker"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.reddit.com/*"],
+            "js": ["content-script.js"],
+            "all_frames": true
+          }
+      ],
+
+      "permissions": [
+        "activeTab",
+        "tabs"
+      ]
+  }
