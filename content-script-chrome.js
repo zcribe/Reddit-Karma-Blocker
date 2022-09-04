@@ -63,7 +63,7 @@ function removeKarma() {
     console.log(`Error: ${error}`);
   }
 
-  var settings = browser.storage.local.get([
+  var settings = chrome.storage.local.get([
     "scorePost",
     "scoreComment",
     "scoreUser",

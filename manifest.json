@@ -1,27 +1,42 @@
 {
-    "manifest_version": 2,
-    "name": "Reddit Karma Blocker",
-    "author": "Erlend Eelmets",
-    "version": "0.1",
-    "description": "Blocks Karma numbers in reddit. ",
-    "icons": {
+  "manifest_version": 3,
+  "name": "Reddit Karma Blocker",
+  "author": "Erlend Eelmets",
+  "version": "1.2",
+  "description": "Blocks Karma numbers in reddit. ",
+  "icons": {
+    "144": "icons/karma.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
       "144": "icons/karma.png"
     },
-    "browser_action": {
-      "default_icon": {
-        "144": "icons/karma.png"
-      },
-      "default_title": "Reddit Karma Blocker"
-    },
-
-    "content_scripts": [
-        {
-            "matches": ["*://*.reddit.com/*"],
-            "js": ["content-script.js"],
-            "all_frames": true
-          }
+    "default_title": "Reddit Karma Blocker",
+    "default_popup": "popup/popup-chrome.html"
+  },
+  "options_ui": {
+    "page": "popup/popup-chrome.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
       ],
-
-      "permissions": [
-      ]
-  }
+      "js": [
+        "content-script-chrome.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/karma.png"
+      ],
+      "matches": ["https://reddit.karma.blocker/*"]
+    }
+  ]
+}
