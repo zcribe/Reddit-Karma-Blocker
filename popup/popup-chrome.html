@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <form>
+      <div class="container" style="width: 200px">
+        <div class="row">
+          <div class="column column-50 column-offset-25">
+            <img id="reddit-karma-blocker-logo" />
+          </div>
+        </div>
+        <div class="row">
+          <h5 style="margin-bottom: 0px; font-weight: 700;">
+            Reddit Karma Blocker
+          </h5>
+        </div>
+        <div class="row">
+          <h6 style="margin-bottom: 0px;">Show:</h6>
+        </div>
+        <div class="row">
+          <input
+            type="checkbox"
+            id="scores_post"
+            name="scores_post"
+            value="scores_post"
+          />
+          <label for="scores_post">Post scores</label>
+        </div>
+        <div class="row">
+          <input
+            type="checkbox"
+            id="scores_comment"
+            name="scores_comment"
+            value="scores_comment"
+          />
+          <label for="scores_comment">Comment scores</label>
+        </div>
+        <div class="row">
+          <input
+            type="checkbox"
+            id="scores_user"
+            name="scores_user"
+            value="scores_user"
+          />
+          <label for="scores_user">User scores</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="arrows" name="arrows" value="arrows" />
+          <label for="arrows">Arrows</label>
+        </div>
+        <div class="row">
+          <button type="submit">Save</button>
+        </div>
+      </div>
+    </form>
+    <script src="popup-chrome.js"></script>
+  </body>
+</html>
