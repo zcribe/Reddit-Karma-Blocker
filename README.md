@@ -1,5 +1,6 @@
 # Reddit Karma Blocker
  
+ Firefox and Chrome browser extension for Reddit.
   	
 Reduces unintended use of Reddit scores for value judgment. By hiding it and associated controls.
 
