@@ -1,5 +1,5 @@
 ![Reddit Karma Blocker](/icons/new/redditKarmaBlockerAssetText2x.png)
-# Reddit Karma Blocker
+# Reddit Karma Blocker - Browser extension
 
 Reduces unintended use of Reddit scores for value judgment. By hiding it and associated controls.
 
