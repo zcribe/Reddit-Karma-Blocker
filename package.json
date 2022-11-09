@@ -23,7 +23,7 @@
     "url": "https://github.com/zcribe/Reddit-Karma-Blocker/issues"
   },
   "homepage": "https://github.com/zcribe/Reddit-Karma-Blocker#readme",
-  "dependencies": {
-    "cypress": "^10.7.0"
+  "devDependencies": {
+    "cypress": "^10.9.0"
   }
 }

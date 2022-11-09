@@ -70,7 +70,15 @@ function removeKarma() {
     "arrows",
   ]);
 
-  settings.then(function (result){removeContent(result)}, onError);
+    settings.then(function (result){
+      if (Object.keys(result).length !== 0) {
+        removeContent(result)
+      } else {
+        removeContent({'scorePost': true, 'scoreComment': true, 'scoreUser': true, 'arrows': true})
+      }
+      
+    }, onError);
+  
 }
 
 removeKarma();

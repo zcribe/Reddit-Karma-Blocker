@@ -32,6 +32,6 @@ function onError(error) {
 
 
 
-document.querySelector("#reddit-karma-blocker-logo").src = browser.runtime.getURL("icons/karma.png");
+document.querySelector("#reddit-karma-blocker-logo").src = browser.runtime.getURL("icons/new/128.png");
 document.addEventListener("DOMContentLoaded", restoreOptions);
 document.querySelector("form").addEventListener("submit", saveOptions);
